@@ -6,7 +6,7 @@ import time
 import os
 import google.generativeai as genai
 
-genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+genai.configure(api_key=os.getenv("AIzaSyD6hOyp65f5nIN-HLiAdpHPofK1-O0dEZo"))
 
 ## function to load Gemini Pro model and get response
 model = genai.GenerativeModel("gemini-pro")
