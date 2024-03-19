@@ -133,7 +133,7 @@ for message in st.session_state.messages:
 input = st.chat_input("Ask a Question")
 
 if input:
-    response = model.generateContent(input)
+    response = model.generate_content(input)
     
     st.chat_message("user").markdown(input)
     # Add user message to chat history
