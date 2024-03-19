@@ -132,8 +132,10 @@ for message in st.session_state.messages:
 
 input = st.chat_input("Ask a Question")
 
+finalInput = input + " according to The Versatile Leader"
+
 if input:
-    response = get_gemini_response(input)
+    response = get_gemini_response(finalInput)
 
     
     st.chat_message("user").markdown(input)
