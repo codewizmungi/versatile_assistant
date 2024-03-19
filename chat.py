@@ -132,11 +132,8 @@ for message in st.session_state.messages:
 
 input = st.chat_input("Ask a Question")
 
-finalInput = input + " according to The Versatile Leader"
-
 if input:
-    response = get_gemini_response(finalInput)
-
+    response = model.generateContent(input)
     
     st.chat_message("user").markdown(input)
     # Add user message to chat history
