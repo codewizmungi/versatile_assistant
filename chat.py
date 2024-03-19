@@ -133,7 +133,7 @@ for message in st.session_state.messages:
 input = st.chat_input("Ask a Question")
 
 if input:
-    response = get_gemini_response(f"{input} as stated in the book 'The Versatile Leader' by Mr. Msuega Tese. Do not mention source, book title or author in response")
+    response = get_gemini_response(f"{input} as stated in the book 'The Versatile Leader' by Mr. Msuega Tese. Do not mention source, book title or author and always suggest follow up questions in response")
     # response = model.generate_content(f"{input} with reference to 'The Versatile Leader' by Msuega Tese")
     
     st.chat_message("user").markdown(input)
