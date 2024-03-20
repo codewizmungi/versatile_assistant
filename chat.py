@@ -9,7 +9,7 @@ genai.configure(api_key="AIzaSyCseHjjdo1jeJ7a9rGIgzLjq4r_fAbj-MM")
 
 # Set up the model
 generation_config = {
-  "temperature": 0.9,
+  "temperature": 0.1,
   "top_p": 1,
   "top_k": 1,
   "max_output_tokens": 2048,
@@ -133,7 +133,10 @@ for message in st.session_state.messages:
 input = st.chat_input("Ask a Question")
 
 if input:
-    response = get_gemini_response(f"{input} as stated in the book 'The Versatile Leader' by Mr. Msuega Tese. Do not mention the book title or author in response")
+    if (input == "hello" or input == "hi" or input == "Greetings"):
+      response = get_gemini_response(input)
+    else:
+        response = get_gemini_response(f"{input} as stated in the book 'The Versatile Leader' by Mr. Msuega Tese. Do not mention the book title or author in response")
     # response = model.generate_content(f"{input} with reference to 'The Versatile Leader' by Msuega Tese")
     
     st.chat_message("user").markdown(input)
