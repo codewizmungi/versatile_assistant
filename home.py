@@ -10,47 +10,22 @@ st.title("Hello,")
 st.header("How can I assist you today?")
 st.text("")
 st.text("")
-st.text("")
 st.markdown("Here are some suggestions to get you started")
-col1, col2, col3 = st.columns(3, gap="small")
 
-with col1:
-    if st.button('Who is a Versatile Leader', use_container_width=True):
-        if "user_initial_prompt" not in st.session_state:
-            st.session_state['user_initial_prompt'] = "Who is a Versatile Leader"
-        st.switch_page("pages/chat.py")
+if st.button('Who is a Versatile Leader', use_container_width=True):
+    if "user_initial_prompt" not in st.session_state:
+        st.session_state['user_initial_prompt'] = "Who is a Versatile Leader"
+    st.switch_page("pages/chat.py")
 
-with col2:
-    if st.button('What is the meaning of Influence', use_container_width=True):
-        if "user_initial_prompt" not in st.session_state:
-            st.session_state['user_initial_prompt'] = "What is Influence"
-        st.switch_page("pages/chat.py")
+if st.button('What is the meaning of Influence', use_container_width=True):
+    if "user_initial_prompt" not in st.session_state:
+        st.session_state['user_initial_prompt'] = "What is Influence"
+    st.switch_page("pages/chat.py")
 
-with col3:
-    if st.button('Explain the Physician Metaphor', use_container_width=True):
-        if "user_initial_prompt" not in st.session_state:
-            st.session_state['user_initial_prompt'] = "Explain Physician Metaphor"
-        st.switch_page("pages/chat.py")
-
-if st.button('What metaphor can I use when my company is in Decline', use_container_width=True):
-        if "user_initial_prompt" not in st.session_state:
-            st.session_state['user_initial_prompt'] = "What metaphor can I use when my company is in Decline"
-        st.switch_page("pages/chat.py")
-
-col1, col2 = st.columns(2, gap="small")
-
-with col1:
-    if st.button('What are the business lifecycle stages', use_container_width=True):
-        if "user_initial_prompt" not in st.session_state:
-            st.session_state['user_initial_prompt'] = "What are the business lifecycle stages"
-        st.switch_page("pages/chat.py")
-
-with col2:
-    if st.button('How can I be a good Manager', use_container_width=True):
-        if "user_initial_prompt" not in st.session_state:
-            st.session_state['user_initial_prompt'] = "How to be a good Manager"
-        st.switch_page("pages/chat.py")
-
+if st.button('What are the business lifecycle stages', use_container_width=True):
+    if "user_initial_prompt" not in st.session_state:
+        st.session_state['user_initial_prompt'] = "What are the business lifecycle stages"
+    st.switch_page("pages/chat.py")
 
 input = st.chat_input("Ask a Question",key="chat_ask_question")
 
@@ -139,6 +114,25 @@ st.markdown("""
             position: fixed;
             bottom: 50px;
         }
+        .st-emotion-cache-1umgz6k {
+            display: inline-flex;
+            -webkit-box-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            justify-content: center;
+            font-weight: 400;
+            padding: 0.25rem 0.75rem;
+            border-radius: 0.5rem;
+            min-height: 38.4px;
+            margin: 0px;
+            line-height: 1.6;
+            color: inherit;
+            width: 100%;
+            user-select: none;
+            padding: 20px;
+            background-color: rgb(255, 255, 255);
+            border: 1px solid rgba(49, 51, 63, 0.2);
+        }
         @media only screen and (max-width: 768px) {
             div[data-baseweb="textarea"]{
                 outline: none;
@@ -166,25 +160,6 @@ st.markdown("""
             }
             .block-container {
                 width: 100%;
-            }
-            .st-emotion-cache-1umgz6k {
-                display: inline-flex;
-                -webkit-box-align: center;
-                align-items: center;
-                -webkit-box-pack: center;
-                justify-content: center;
-                font-weight: 400;
-                padding: 0.25rem 0.75rem;
-                border-radius: 0.5rem;
-                min-height: 38.4px;
-                margin: 0px;
-                line-height: 1.6;
-                color: inherit;
-                width: 100%;
-                user-select: none;
-                padding: 5px;
-                background-color: rgb(255, 255, 255);
-                border: 1px solid rgba(49, 51, 63, 0.2);
             }
         }
         @media only screen and (max-width: 910px) {
@@ -215,25 +190,6 @@ st.markdown("""
             .block-container {
                 width: 100%;
             }
-            .st-emotion-cache-1umgz6k {
-                display: inline-flex;
-                -webkit-box-align: center;
-                align-items: center;
-                -webkit-box-pack: center;
-                justify-content: center;
-                font-weight: 400;
-                padding: 0.25rem 0.75rem;
-                border-radius: 0.5rem;
-                min-height: 38.4px;
-                margin: 0px;
-                line-height: 1.6;
-                color: inherit;
-                width: 100%;
-                user-select: none;
-                padding: 10px;
-                background-color: rgb(255, 255, 255);
-                border: 1px solid rgba(49, 51, 63, 0.2);
-            }
         }
         @media only screen and (min-width: 910px) {
             div[data-baseweb="textarea"]{
@@ -256,25 +212,6 @@ st.markdown("""
             .block-container {
                 width: 100%;
             }
-            .st-emotion-cache-1umgz6k {
-                display: inline-flex;
-                -webkit-box-align: center;
-                align-items: center;
-                -webkit-box-pack: center;
-                justify-content: center;
-                font-weight: 400;
-                padding: 0.25rem 0.75rem;
-                border-radius: 0.5rem;
-                min-height: 38.4px;
-                margin: 0px;
-                line-height: 1.6;
-                color: inherit;
-                width: 100%;
-                user-select: none;
-                padding: 5px;
-                background-color: rgb(255, 255, 255);
-                border: 1px solid rgba(49, 51, 63, 0.2);
-            }
         }
         @media only screen and (min-width: 1024px) {
             div[data-baseweb="textarea"]{
@@ -296,25 +233,6 @@ st.markdown("""
             }
             .block-container {
                 width: 50%;
-            }
-            .st-emotion-cache-1umgz6k {
-                display: inline-flex;
-                -webkit-box-align: center;
-                align-items: center;
-                -webkit-box-pack: center;
-                justify-content: center;
-                font-weight: 400;
-                padding: 0.25rem 0.75rem;
-                border-radius: 0.5rem;
-                min-height: 38.4px;
-                margin: 0px;
-                line-height: 1.6;
-                color: inherit;
-                width: 100%;
-                user-select: none;
-                padding: 25px;
-                background-color: rgb(255, 255, 255);
-                border: 1px solid rgba(49, 51, 63, 0.2);
             }
         }
         
