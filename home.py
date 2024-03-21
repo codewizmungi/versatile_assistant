@@ -233,13 +233,6 @@ st.markdown("""
                 min-width: auto;
                 max-width: initial;
             }
-            /** For Chat History Section **/
-            .st-emotion-cache-9tg1hl {
-                width: 100%;
-                padding: 6rem 1rem 1rem;
-                min-width: auto;
-                max-width: initial;
-            }
             .block-container {
                 width: 100%;
             }
@@ -271,13 +264,6 @@ st.markdown("""
                 min-width: auto;
                 max-width: initial;
             }
-            /** For Chat History Section **/
-            .st-emotion-cache-9tg1hl {
-                width: 40%;
-                padding: 6rem 1rem 1rem;
-                min-width: auto;
-                max-width: initial;
-            }
             .block-container {
                 width: 50%;
             }
@@ -296,7 +282,7 @@ st.markdown("""
                 color: inherit;
                 width: 100%;
                 user-select: none;
-                padding: 20px;
+                padding: 25px;
                 background-color: rgb(255, 255, 255);
                 border: 1px solid rgba(49, 51, 63, 0.2);
             }
