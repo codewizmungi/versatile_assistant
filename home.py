@@ -190,12 +190,12 @@ st.markdown("""
         @media only screen and (max-width: 910px) {
             div[data-baseweb="textarea"]{
                 outline: none;
-                padding: 10px;
+                padding: 5px;
                 border-radius: 50px;
             }
             .st-b4 {
                 outline: none;
-                padding: 10px;
+                padding: 5px;
                 border-radius: 50px;
             }
             /** For Chat Input Section **/
@@ -238,12 +238,12 @@ st.markdown("""
         @media only screen and (min-width: 910px) {
             div[data-baseweb="textarea"]{
                 outline: none;
-                padding: 10px;
+                padding: 5px;
                 border-radius: 50px;
             }
             .st-b4 {
                 outline: none;
-                padding: 10px;
+                padding: 5px;
                 border-radius: 50px;
             }
             /** For Chat Input Section **/
