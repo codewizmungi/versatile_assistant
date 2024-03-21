@@ -6,7 +6,8 @@ st.set_page_config(
     menu_items={
         'About': "https://isitnet.com"
     })
-st.header("Hello, how can I assist you today?")
+st.header("Hello,")
+st.subheader("How can I assist you today?")
 st.text("")
 st.markdown("Here are some suggestions to get you started")
 
