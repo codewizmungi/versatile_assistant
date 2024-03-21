@@ -180,7 +180,7 @@ st.markdown("""
                 color: inherit;
                 width: 100%;
                 user-select: none;
-                padding: 20px;
+                padding: 10px;
                 background-color: rgb(255, 255, 255);
                 border: 1px solid rgba(49, 51, 63, 0.2);
             }
