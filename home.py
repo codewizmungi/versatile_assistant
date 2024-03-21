@@ -21,7 +21,7 @@ with col1:
         st.switch_page("pages/chat.py")
 
 with col2:
-    if st.button('What is Influence', use_container_width=True):
+    if st.button('What is the meaning of Influence', use_container_width=True):
         if "user_initial_prompt" not in st.session_state:
             st.session_state['user_initial_prompt'] = "What is Influence"
         st.switch_page("pages/chat.py")
@@ -180,7 +180,7 @@ st.markdown("""
                 color: inherit;
                 width: 100%;
                 user-select: none;
-                padding: 5px;
+                padding: 10px;
                 background-color: rgb(255, 255, 255);
                 border: 1px solid rgba(49, 51, 63, 0.2);
             }
