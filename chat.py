@@ -5,7 +5,7 @@ import streamlit as st
 import time
 import google.generativeai as genai
 
-genai.configure(api_key="AIzaSyCseHjjdo1jeJ7a9rGIgzLjq4r_fAbj-MM")
+genai.configure(api_key=st.secrets['GOOGLE_API_KEY'])
 
 # Set up the model
 generation_config = {
@@ -33,6 +33,11 @@ safety_settings = [
     "threshold": "BLOCK_MEDIUM_AND_ABOVE"
   },
 ]
+
+def load_css():
+    with open("static/style.css", "r") as f:
+        css = f"<style>{f.read()}</style>"
+        st.markdown(css, unsafe_allow_html=True)
 
 ## function to load Gemini Pro model and get response
 model = genai.GenerativeModel(model_name="gemini-1.0-pro",
@@ -133,10 +138,10 @@ for message in st.session_state.messages:
 input = st.chat_input("Ask a Question")
 
 if input:
-    if (input == "hello" or input == "hi" or input == "Greetings"):
+    if (input == "hello" or input == "hi" or input == "Greetings" or input == "how are you"):
       response = get_gemini_response(input)
     else:
-        response = get_gemini_response(f"{input} as stated in the book 'The Versatile Leader' by Mr. Msuega Tese. Do not mention the book title or author in response")
+        response = get_gemini_response(f"{input} as stated in the book 'The Versatile Leader' by Mr. Msuega Tese. Do not mention the book title or author in response. Do not mention as stated in, in response. Always give examples from the bible or the book if there are any")
     # response = model.generate_content(f"{input} with reference to 'The Versatile Leader' by Msuega Tese")
     
     st.chat_message("user").markdown(input)
