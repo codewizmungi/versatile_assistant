@@ -11,19 +11,19 @@ st.subheader("How can I assist you today?")
 st.text("")
 st.markdown("Here are some suggestions to get you started")
 
+if "user_initial_prompt" not in st.session_state:
+    st.session_state['user_initial_prompt'] = ""
+
 if st.button('Who is a Versatile Leader', use_container_width=True):
-    if "user_initial_prompt" not in st.session_state:
-        st.session_state['user_initial_prompt'] = "Who is a Versatile Leader"
+    st.session_state['user_initial_prompt'] = "Who is a Versatile Leader"
     st.switch_page("pages/chat.py")
 
 if st.button('What is the meaning of Influence', use_container_width=True):
-    if "user_initial_prompt" not in st.session_state:
-        st.session_state['user_initial_prompt'] = "What is Influence"
+    st.session_state['user_initial_prompt'] = "What is Influence"
     st.switch_page("pages/chat.py")
 
 if st.button('What are the business lifecycle stages', use_container_width=True):
-    if "user_initial_prompt" not in st.session_state:
-        st.session_state['user_initial_prompt'] = "What are the business lifecycle stages"
+    st.session_state['user_initial_prompt'] = "What are the business lifecycle stages"
     st.switch_page("pages/chat.py")
 
 input = st.chat_input("Ask a Question",key="chat_ask_question")

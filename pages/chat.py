@@ -110,13 +110,21 @@ def get_gemini_response(question):
 
 st.set_page_config(
   page_title="Versatile Leader Assistant",
-  layout="wide")
+  layout="wide",
+  initial_sidebar_state="collapsed")
+
+with st.sidebar:
+  st.subheader("Menu")
+  st.page_link("home.py", label="Home", icon="🏠")
 
 st.markdown("""
     <style>
-        section[data-testid="stSidebar"][aria-expanded="true"]{
+        div[data-testid="stSidebarNav"]{
           display: none;
         }  
+        div[data-testid="stSidebarUserContent"]{
+            margin-top: 100px;
+        }
         div[data-testid="stMarkdownContainer"]{
             font-family: "Montserrat", sans-serif;
         }
