@@ -181,20 +181,40 @@ st.markdown("""
           inset: 0px;
           overflow: hidden;
         }
-        /** For Chat Input Section **/
-        .st-emotion-cache-1wm93xv {
-          width: 50%;
-          padding: 1rem 1rem 55px;
-          min-width: auto;
-          max-width: initial;
+        @media only screen and (max-width: 1024px) {
+          /** For Chat Input Section **/
+          .st-emotion-cache-1wm93xv {
+            width: 100%;
+            padding: 1rem 1rem 55px;
+            min-width: auto;
+            max-width: initial;
+          }
+          /** For Chat History Section **/
+          .st-emotion-cache-9tg1hl {
+            width: 90%;
+            padding: 6rem 1rem 1rem;
+            min-width: auto;
+            max-width: initial;
+          }
         }
-        /** For Chat History Section **/
-        .st-emotion-cache-9tg1hl {
-          width: 40%;
-          padding: 6rem 1rem 1rem;
-          min-width: auto;
-          max-width: initial;
+        @media only screen and (min-width: 1024px) {
+          /** For Chat Input Section **/
+          .st-emotion-cache-1wm93xv {
+            width: 50%;
+            padding: 1rem 1rem 55px;
+            min-width: auto;
+            max-width: initial;
+          }
+          /** For Chat History Section **/
+          .st-emotion-cache-9tg1hl {
+            width: 40%;
+            padding: 6rem 1rem 1rem;
+            min-width: auto;
+            max-width: initial;
+          }
         }
+        
+        
     </style>
     """, unsafe_allow_html=True)
 
