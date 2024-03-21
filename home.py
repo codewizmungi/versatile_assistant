@@ -69,19 +69,9 @@ st.markdown("""
             font-size: larger;
             font-family: "Montserrat", sans-serif;
         }
-        div[data-baseweb="textarea"]{
-          outline: none;
-          padding: 10px;
-          border-radius: 50px;
-        }
         textarea[data-testid="stChatInputTextArea"]{
             font-size: larger;
             font-family: "Montserrat", sans-serif;
-        }
-        .st-b4 {
-          outline: none;
-          padding: 10px;
-          border-radius: 50px;
         }
         .st-bz {
           max-height: none;
@@ -150,6 +140,16 @@ st.markdown("""
             bottom: 50px;
         }
         @media only screen and (max-width: 768px) {
+            div[data-baseweb="textarea"]{
+                outline: none;
+                padding: 5px;
+                border-radius: 50px;
+            }
+            .st-b4 {
+                outline: none;
+                padding: 5px;
+                border-radius: 50px;
+            }
             /** For Chat Input Section **/
             .st-emotion-cache-1wm93xv {
                 width: 100%;
@@ -188,6 +188,16 @@ st.markdown("""
             }
         }
         @media only screen and (max-width: 910px) {
+            div[data-baseweb="textarea"]{
+                outline: none;
+                padding: 10px;
+                border-radius: 50px;
+            }
+            .st-b4 {
+                outline: none;
+                padding: 10px;
+                border-radius: 50px;
+            }
             /** For Chat Input Section **/
             .st-emotion-cache-1wm93xv {
                 width: 100%;
@@ -226,6 +236,16 @@ st.markdown("""
             }
         }
         @media only screen and (min-width: 910px) {
+            div[data-baseweb="textarea"]{
+                outline: none;
+                padding: 10px;
+                border-radius: 50px;
+            }
+            .st-b4 {
+                outline: none;
+                padding: 10px;
+                border-radius: 50px;
+            }
             /** For Chat Input Section **/
             .st-emotion-cache-1wm93xv {
                 width: 100%;
@@ -257,6 +277,16 @@ st.markdown("""
             }
         }
         @media only screen and (min-width: 1024px) {
+            div[data-baseweb="textarea"]{
+                outline: none;
+                padding: 10px;
+                border-radius: 50px;
+            }
+            .st-b4 {
+                outline: none;
+                padding: 10px;
+                border-radius: 50px;
+            }
             /** For Chat Input Section **/
             .st-emotion-cache-1wm93xv {
                 width: 50%;
