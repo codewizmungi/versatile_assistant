@@ -239,7 +239,6 @@ st.markdown("""
     """, unsafe_allow_html=True)
 
 if input:
-    if "user_initial_prompt" not in st.session_state:
-        st.session_state['user_initial_prompt'] = input
+    st.session_state['user_initial_prompt'] = input
     st.switch_page("pages/chat.py")
     
