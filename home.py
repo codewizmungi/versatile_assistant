@@ -27,7 +27,7 @@ with col2:
         st.switch_page("pages/chat.py")
 
 with col3:
-    if st.button('Explain Physician Metaphor', use_container_width=True):
+    if st.button('Explain the Physician Metaphor', use_container_width=True):
         if "user_initial_prompt" not in st.session_state:
             st.session_state['user_initial_prompt'] = "Explain Physician Metaphor"
         st.switch_page("pages/chat.py")
@@ -46,7 +46,7 @@ with col1:
         st.switch_page("pages/chat.py")
 
 with col2:
-    if st.button('How to be a good Manager', use_container_width=True):
+    if st.button('How can I be a good Manager', use_container_width=True):
         if "user_initial_prompt" not in st.session_state:
             st.session_state['user_initial_prompt'] = "How to be a good Manager"
         st.switch_page("pages/chat.py")
@@ -180,7 +180,7 @@ st.markdown("""
                 color: inherit;
                 width: 100%;
                 user-select: none;
-                padding: 10px;
+                padding: 15px;
                 background-color: rgb(255, 255, 255);
                 border: 1px solid rgba(49, 51, 63, 0.2);
             }
