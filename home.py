@@ -7,7 +7,7 @@ st.set_page_config(
         'About': "https://isitnet.com"
     })
 st.title("Hello,")
-st.header("How can I assist today?")
+st.header("How can I assist you today?")
 st.text("")
 st.text("")
 st.text("")
