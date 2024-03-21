@@ -213,8 +213,6 @@ st.markdown("""
             max-width: initial;
           }
         }
-        
-        
     </style>
     """, unsafe_allow_html=True)
 

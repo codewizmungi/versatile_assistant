@@ -52,7 +52,7 @@ with col2:
         st.switch_page("pages/chat.py")
 
 
-input = st.text_input("Ask a Question", placeholder="Ask a Question",label_visibility="hidden")
+input = st.chat_input("Ask a Question",key="chat_ask_question")
 
 st.markdown("""
     <style>
@@ -68,6 +68,66 @@ st.markdown("""
         input[aria-label="Ask a Question"]{
             font-size: larger;
             font-family: "Montserrat", sans-serif;
+        }
+        div[data-baseweb="textarea"]{
+          outline: none;
+          padding: 10px;
+          border-radius: 50px;
+        }
+        textarea[data-testid="stChatInputTextArea"]{
+            font-size: larger;
+            font-family: "Montserrat", sans-serif;
+        }
+        .st-b4 {
+          outline: none;
+          padding: 10px;
+          border-radius: 50px;
+        }
+        .st-bz {
+          max-height: none;
+          border-radius: 50px;
+        }
+        .element-container st-emotion-cache-1exz1qz e1f1d6gn4 {
+          position: absolute;
+          bottom: 0px;
+          right: 3rem;
+          display: none
+        }
+        .st-emotion-cache-f4ro0r {
+          display: flex;
+          align-items: flex-end;
+          height: 100%;
+          position: absolute;
+          right: 0px;
+          pointer-events: none;
+          display: none;
+        }
+        .st-emotion-cache-s1k4sy {
+          background-color: transparent;
+          position: relative;
+          -webkit-box-flex: 1;
+          flex-grow: 1;
+          border-radius: 50px;
+          display: flex;
+          -webkit-box-align: center;
+          align-items: center;
+        }
+        .stChatInput {
+          border-radius: 50px;
+          display: flex;
+          background-color: rgb(240, 242, 246);
+        }
+        
+        .st-emotion-cache-1wrcr25 {
+          display: flex;
+          flex-direction: row;
+          -webkit-box-pack: start;
+          place-content: flex-start;
+          -webkit-box-align: stretch;
+          align-items: stretch;
+          position: absolute;
+          inset: 0px;
+          overflow: hidden;
         }
         .st-b7 {
             background-color: rgb(240, 242, 246);
@@ -90,6 +150,20 @@ st.markdown("""
             bottom: 50px;
         }
         @media only screen and (max-width: 768px) {
+            /** For Chat Input Section **/
+            .st-emotion-cache-1wm93xv {
+                width: 100%;
+                padding: 1rem 1rem 55px;
+                min-width: auto;
+                max-width: initial;
+            }
+            /** For Chat History Section **/
+            .st-emotion-cache-9tg1hl {
+                width: 100%;
+                padding: 6rem 1rem 1rem;
+                min-width: auto;
+                max-width: initial;
+            }
             .block-container {
                 width: 100%;
             }
@@ -114,6 +188,20 @@ st.markdown("""
             }
         }
         @media only screen and (max-width: 910px) {
+            /** For Chat Input Section **/
+            .st-emotion-cache-1wm93xv {
+                width: 100%;
+                padding: 1rem 1rem 55px;
+                min-width: auto;
+                max-width: initial;
+            }
+            /** For Chat History Section **/
+            .st-emotion-cache-9tg1hl {
+                width: 100%;
+                padding: 6rem 1rem 1rem;
+                min-width: auto;
+                max-width: initial;
+            }
             .block-container {
                 width: 100%;
             }
@@ -138,6 +226,20 @@ st.markdown("""
             }
         }
         @media only screen and (min-width: 910px) {
+            /** For Chat Input Section **/
+            .st-emotion-cache-1wm93xv {
+                width: 100%;
+                padding: 1rem 1rem 55px;
+                min-width: auto;
+                max-width: initial;
+            }
+            /** For Chat History Section **/
+            .st-emotion-cache-9tg1hl {
+                width: 100%;
+                padding: 6rem 1rem 1rem;
+                min-width: auto;
+                max-width: initial;
+            }
             .block-container {
                 width: 100%;
             }
@@ -162,6 +264,20 @@ st.markdown("""
             }
         }
         @media only screen and (min-width: 1024px) {
+            /** For Chat Input Section **/
+            .st-emotion-cache-1wm93xv {
+                width: 50%;
+                padding: 1rem 1rem 55px;
+                min-width: auto;
+                max-width: initial;
+            }
+            /** For Chat History Section **/
+            .st-emotion-cache-9tg1hl {
+                width: 40%;
+                padding: 6rem 1rem 1rem;
+                min-width: auto;
+                max-width: initial;
+            }
             .block-container {
                 width: 50%;
             }
