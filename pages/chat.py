@@ -191,7 +191,7 @@ st.markdown("""
           }
           /** For Chat History Section **/
           .st-emotion-cache-9tg1hl {
-            width: 90%;
+            width: 100%;
             padding: 6rem 1rem 1rem;
             min-width: auto;
             max-width: initial;
