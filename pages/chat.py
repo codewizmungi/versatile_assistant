@@ -264,7 +264,7 @@ if input:
   if (input == "hello" or input == "hi" or input == "Greetings" or input == "how are you"):
     response = get_gemini_response(input)
   elif 'proverb' in input:
-    response = get_gemini_response(f"{input} as stated in the book 'The Versatile Leader' by Mr. Msuega Tese. Do not mention the book title or author in response. Do not mention as stated in, in response.")
+    response = get_gemini_response(f"{input} as stated in the book 'The Versatile Leader' by Mr. Msuega Tese. Do not mention the book title or author in response. Do not mention as stated in, in response. Also give the meaning of the proverb and how it relates to leadership in the book")
   else:
       response = get_gemini_response(f"{input} as stated in the book 'The Versatile Leader' by Mr. Msuega Tese. Do not mention the book title or author in response. Do not mention as stated in, in response. Always give examples from the book if there are any.")
     
