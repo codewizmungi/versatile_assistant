@@ -84,7 +84,7 @@ st.markdown("""
         .stChatInput {
           border-radius: 50px;
           display: flex;
-          background-color: rgb(240, 242, 246);
+          background-color: #1E1F20;
         }
         
         .st-emotion-cache-1wrcr25 {
