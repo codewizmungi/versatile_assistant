@@ -118,7 +118,7 @@ st.markdown("""
             position: fixed;
             bottom: 50px;
         }
-        div[data-testid="baseButton-secondary"]{
+        button[data-testid="baseButton-secondary"]{
             padding: 20px;
         }
         
