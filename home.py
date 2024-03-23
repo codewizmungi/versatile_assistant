@@ -118,28 +118,10 @@ st.markdown("""
             position: fixed;
             bottom: 50px;
         }
-        div[data-testid="stButton"]{
+        div[data-testid="baseButton-secondary"]{
             padding: 20px;
         }
-        .st-emotion-cache-1umgz6k {
-            display: inline-flex;
-            -webkit-box-align: center;
-            align-items: center;
-            -webkit-box-pack: center;
-            justify-content: center;
-            font-weight: 400;
-            padding: 0.25rem 0.75rem;
-            border-radius: 0.5rem;
-            min-height: 38.4px;
-            margin: 0px;
-            line-height: 1.6;
-            color: inherit;
-            width: 100%;
-            user-select: none;
-            padding: 20px;
-            background-color: rgb(255, 255, 255);
-            border: 1px solid rgba(49, 51, 63, 0.2);
-        }
+        
         @media only screen and (max-width: 768px) {
             div[data-baseweb="textarea"]{
                 outline: none;
