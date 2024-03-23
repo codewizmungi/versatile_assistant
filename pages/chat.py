@@ -265,6 +265,8 @@ if input:
     response = get_gemini_response(input)
   elif 'proverb' in input:
     response = get_gemini_response(f"{input} as stated in the book 'The Versatile Leader' by Mr. Msuega Tese. Do not mention the book title or author in response. Do not mention as stated in, in response. Also give the meaning of the proverb and how it relates to leadership in the book")
+  elif 'leader' in input:
+    response = get_gemini_response(f"{input} as stated in the book 'The Versatile Leader' by Mr. Msuega Tese. Do not mention the book title or author in response. Do not mention as stated in, in response. Always give examples from the book if there are any")
   else:
       response = get_gemini_response(f"{input} as stated in the book 'The Versatile Leader' by Mr. Msuega Tese. Do not mention the book title or author in response. Do not mention as stated in, in response.")
     
