@@ -99,7 +99,7 @@ st.markdown("""
           overflow: hidden;
         }
         .st-b7 {
-            background-color: rgb(240, 242, 246);
+            background-color: #1E1F20;
             padding: 10px;
             margin-right: 20px;
             border-radius: 50px;
@@ -127,6 +127,7 @@ st.markdown("""
                 outline: none;
                 padding: 5px;
                 border-radius: 50px;
+                background-color: #1E1F20;
             }
             .st-b4 {
                 outline: none;
@@ -156,6 +157,7 @@ st.markdown("""
                 outline: none;
                 padding: 5px;
                 border-radius: 50px;
+                background-color: #1E1F20;
             }
             .st-b4 {
                 outline: none;
@@ -185,6 +187,7 @@ st.markdown("""
                 outline: none;
                 padding: 5px;
                 border-radius: 50px;
+                background-color: #1E1F20;
             }
             .st-b4 {
                 outline: none;
@@ -207,6 +210,7 @@ st.markdown("""
                 outline: none;
                 padding: 10px;
                 border-radius: 50px;
+                background-color: #1E1F20;
             }
             .st-b4 {
                 outline: none;
