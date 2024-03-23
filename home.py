@@ -6,6 +6,7 @@ st.set_page_config(
     menu_items={
         'About': "https://isitnet.com"
     })
+
 st.header("Hello,")
 st.subheader("How can I assist you today?")
 st.text("")
@@ -14,19 +15,19 @@ st.markdown("Here are some suggestions to get you started")
 if "user_initial_prompt" not in st.session_state:
     st.session_state['user_initial_prompt'] = ""
 
-if st.button('Who is a Versatile Leader', use_container_width=True):
+input = st.chat_input("Ask a Question",key="chat_ask_question")
+
+if st.button("Who is a Versatile Leader", use_container_width=True):
     st.session_state['user_initial_prompt'] = "Who is a Versatile Leader"
     st.switch_page("pages/chat.py")
 
-if st.button('What is the meaning of Influence', use_container_width=True):
+if st.button("What is Influence", key="button2", use_container_width=True):
     st.session_state['user_initial_prompt'] = "What is Influence"
     st.switch_page("pages/chat.py")
 
-if st.button('What are the business lifecycle stages', use_container_width=True):
-    st.session_state['user_initial_prompt'] = "What are the business lifecycle stages"
+if st.button("What is the Physician Metaphor", key="button3", use_container_width=True):
+    st.session_state['user_initial_prompt'] = "What is the Physician Metaphor"
     st.switch_page("pages/chat.py")
-
-input = st.chat_input("Ask a Question",key="chat_ask_question")
 
 st.markdown("""
     <style>
