@@ -139,7 +139,8 @@ st.markdown("""
         textarea[data-testid="stChatInputTextArea"]{
             font-size: larger;
             font-family: "Montserrat", sans-serif;
-            color: #000000;
+            color: black;
+            caret-color: black;
         }
         .st-bz {
           max-height: none;

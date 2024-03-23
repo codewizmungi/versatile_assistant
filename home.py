@@ -43,12 +43,14 @@ st.markdown("""
         input[aria-label="Ask a Question"]{
             font-size: larger;
             font-family: "Montserrat", sans-serif;
-            color: #000000;
+            color: black;
+            caret-color: black;
         }
         textarea[data-testid="stChatInputTextArea"]{
             font-size: larger;
             font-family: "Montserrat", sans-serif;
-            color: #000000;
+            color: black;
+            caret-color: red;
         }
         .st-bz {
           max-height: none;
