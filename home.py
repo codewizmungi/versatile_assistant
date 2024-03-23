@@ -118,6 +118,9 @@ st.markdown("""
             position: fixed;
             bottom: 50px;
         }
+        div[data-testid="stButton"]{
+            padding: 20px;
+        }
         .st-emotion-cache-1umgz6k {
             display: inline-flex;
             -webkit-box-align: center;
