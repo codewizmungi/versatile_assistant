@@ -139,8 +139,8 @@ st.markdown("""
         textarea[data-testid="stChatInputTextArea"]{
             font-size: larger;
             font-family: "Montserrat", sans-serif;
-            color: black;
-            caret-color: black;
+            color: lightgray;
+            caret-color: lightgray;
         }
         .st-bz {
           max-height: none;
@@ -174,7 +174,7 @@ st.markdown("""
         .stChatInput {
           border-radius: 50px;
           display: flex;
-          background-color: rgb(240, 242, 246);
+          background-color: #1E1F20;
         }
         
         .st-emotion-cache-1wrcr25 {
@@ -193,6 +193,7 @@ st.markdown("""
             outline: none;
             padding: 10px;
             border-radius: 50px;
+            background-color: #1E1F20;
           }
           .st-b4 {
             outline: none;
@@ -219,6 +220,7 @@ st.markdown("""
             outline: none;
             padding: 15px;
             border-radius: 50px;
+            background-color: #1E1F20;
           }
           .st-b4 {
             outline: none;
