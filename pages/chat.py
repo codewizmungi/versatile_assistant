@@ -266,7 +266,7 @@ if input:
   elif 'proverb' in input:
     response = get_gemini_response(f"{input} as stated in the book 'The Versatile Leader' by Mr. Msuega Tese. Do not mention the book title or author in response. Do not mention as stated in, in response. Also give the meaning of the proverb and how it relates to leadership in the book")
   else:
-      response = get_gemini_response(f"{input} as stated in the book 'The Versatile Leader' by Mr. Msuega Tese. Do not mention the book title or author in response. Do not mention as stated in, in response. Always give examples from the book if there are any.")
+      response = get_gemini_response(f"{input} as stated in the book 'The Versatile Leader' by Mr. Msuega Tese. Do not mention the book title or author in response. Do not mention as stated in, in response. Sometimes give examples from the book if there are any.")
     
   st.chat_message("user").markdown(input)
   # Add user message to chat history
