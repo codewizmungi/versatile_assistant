@@ -11,18 +11,11 @@ div[data-testid="stMarkdownContainer"] {
     font-family: "Montserrat", sans-serif;
 }
 
-input[aria-label="Ask a Question"] {
-    font-size: larger;
-    font-family: "Montserrat", sans-serif;
-    color: lightgray;
-    caret-color: lightgray;
-}
-
 textarea[data-testid="stChatInputTextArea"] {
     font-size: larger;
     font-family: "Montserrat", sans-serif;
-    color: lightgray;
-    caret-color: lightgray;
+    color: #31333F;
+    caret-color: #31333F;
 }
 
 .st-bz {
@@ -61,7 +54,7 @@ textarea[data-testid="stChatInputTextArea"] {
 .stChatInput {
     border-radius: 50px;
     display: flex;
-    background-color: #1E1F20;
+    /* background-color: #1E1F20; */
 }
 
 .st-emotion-cache-1wrcr25 {
@@ -77,7 +70,6 @@ textarea[data-testid="stChatInputTextArea"] {
 }
 
 .st-b7 {
-    background-color: #1E1F20;
     padding: 10px;
     margin-right: 20px;
     border-radius: 50px;
@@ -103,47 +95,14 @@ button[data-testid="baseButton-secondary"] {
     padding: 20px;
 }
 
-@media only screen and (max-width: 768px) {
-    div[data-baseweb="textarea"] {
-        outline: none;
-        padding: 5px;
-        border-radius: 50px;
-        background-color: #1E1F20;
-    }
-
-    .st-b4 {
-        outline: none;
-        padding: 5px;
-        border-radius: 50px;
-    }
-
-    /** For Chat Input Section **/
-    .st-emotion-cache-1wm93xv {
-        width: 100%;
-        padding: 1rem 1rem 55px;
-        min-width: auto;
-        max-width: initial;
-    }
-
-    /** For Chat History Section **/
-    .st-emotion-cache-9tg1hl {
-        width: 100%;
-        padding: 6rem 1rem 1rem;
-        min-width: auto;
-        max-width: initial;
-    }
-
-    .block-container {
-        width: 100%;
-    }
-}
-
 @media only screen and (max-width: 910px) {
     div[data-baseweb="textarea"] {
         outline: none;
         padding: 5px;
         border-radius: 50px;
-        background-color: #1E1F20;
+        /* background-color: #1E1F20; */
+        border: 1.5px solid lightgrey;
+        background-color: white;
     }
 
     .st-b4 {
@@ -178,7 +137,9 @@ button[data-testid="baseButton-secondary"] {
         outline: none;
         padding: 5px;
         border-radius: 50px;
-        background-color: #1E1F20;
+        /* background-color: #1E1F20; */
+        border: 1.5px solid lightgrey;
+        background-color: white;
     }
 
     .st-b4 {
@@ -205,7 +166,9 @@ button[data-testid="baseButton-secondary"] {
         outline: none;
         padding: 10px;
         border-radius: 50px;
-        background-color: #1E1F20;
+        /* background-color: #1E1F20; */
+        border: 1.5px solid lightgrey;
+        background-color: white;
     }
 
     .st-b4 {
