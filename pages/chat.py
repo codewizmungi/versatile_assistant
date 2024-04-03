@@ -5,7 +5,13 @@ import streamlit as st
 import time
 import google.generativeai as genai
 
+
 genai.configure(api_key=st.secrets['GOOGLE_API_KEY'])
+
+st.set_page_config(
+  page_title="Versatile Leader Assistant",
+  layout="wide",
+  initial_sidebar_state="collapsed")
 
 # Set up the model
 generation_config = {
@@ -32,6 +38,11 @@ safety_settings = [
     "threshold": "BLOCK_MEDIUM_AND_ABOVE"
   },
 ]
+
+with open('.streamlit/css/chat.css') as f:
+    css = f.read()
+
+st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
 
 ## function to load Gemini 1.0 Pro model and get response
 model = genai.GenerativeModel(model_name="gemini-1.0-pro", generation_config=generation_config,safety_settings=safety_settings)
@@ -116,134 +127,9 @@ def get_gemini_response(question):
   # response = chat.send_message(question, stream=True)
   return response
 
-st.set_page_config(
-  page_title="Versatile Leader Assistant",
-  layout="wide",
-  initial_sidebar_state="collapsed")
-
 with st.sidebar:
   st.subheader("Menu")
   st.page_link("home.py", label="Home", icon="🏠")
-
-st.markdown("""
-    <style>
-        div[data-testid="stSidebarNav"]{
-          display: none;
-        }  
-        div[data-testid="stSidebarUserContent"]{
-            margin-top: 100px;
-        }
-        div[data-testid="stMarkdownContainer"]{
-            font-family: "Montserrat", sans-serif;
-        }
-        textarea[data-testid="stChatInputTextArea"]{
-            font-size: larger;
-            font-family: "Montserrat", sans-serif;
-            color: lightgray;
-            caret-color: lightgray;
-        }
-        .st-bz {
-          max-height: none;
-          border-radius: 50px;
-        }
-        .element-container st-emotion-cache-1exz1qz e1f1d6gn4 {
-          position: absolute;
-          bottom: 0px;
-          right: 3rem;
-          display: none
-        }
-        .st-emotion-cache-f4ro0r {
-          display: flex;
-          align-items: flex-end;
-          height: 100%;
-          position: absolute;
-          right: 0px;
-          pointer-events: none;
-          display: none;
-        }
-        .st-emotion-cache-s1k4sy {
-          background-color: transparent;
-          position: relative;
-          -webkit-box-flex: 1;
-          flex-grow: 1;
-          border-radius: 50px;
-          display: flex;
-          -webkit-box-align: center;
-          align-items: center;
-        }
-        .stChatInput {
-          border-radius: 50px;
-          display: flex;
-          background-color: #1E1F20;
-        }
-        
-        .st-emotion-cache-1wrcr25 {
-          display: flex;
-          flex-direction: row;
-          -webkit-box-pack: start;
-          place-content: flex-start;
-          -webkit-box-align: stretch;
-          align-items: stretch;
-          position: absolute;
-          inset: 0px;
-          overflow: hidden;
-        }
-        @media only screen and (max-width: 1024px) {
-          div[data-baseweb="textarea"]{
-            outline: none;
-            padding: 10px;
-            border-radius: 50px;
-            background-color: #1E1F20;
-          }
-          .st-b4 {
-            outline: none;
-            padding: 10px;
-            border-radius: 50px;
-          }
-          /** For Chat Input Section **/
-          .st-emotion-cache-1wm93xv {
-            width: 100%;
-            padding: 1rem 1rem 55px;
-            min-width: auto;
-            max-width: initial;
-          }
-          /** For Chat History Section **/
-          .st-emotion-cache-9tg1hl {
-            width: 100%;
-            padding: 6rem 1rem 1rem;
-            min-width: auto;
-            max-width: initial;
-          }
-        }
-        @media only screen and (min-width: 1024px) {
-          div[data-baseweb="textarea"]{
-            outline: none;
-            padding: 15px;
-            border-radius: 50px;
-            background-color: #1E1F20;
-          }
-          .st-b4 {
-            outline: none;
-            padding: 15px;
-            border-radius: 50px;
-          }
-          /** For Chat Input Section **/
-          .st-emotion-cache-1wm93xv {
-            width: 50%;
-            padding: 1rem 1rem 55px;
-            min-width: auto;
-            max-width: initial;
-          }
-          /** For Chat History Section **/
-          .st-emotion-cache-9tg1hl {
-            width: 40%;
-            padding: 6rem 1rem 1rem;
-            min-width: auto;
-            max-width: initial;
-          }
-        }
-    </style>
-    """, unsafe_allow_html=True)
 
 # Initialize chat history
 if "messages" not in st.session_state:

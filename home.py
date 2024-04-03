@@ -7,7 +7,7 @@ st.set_page_config(
         'About': "https://isitnet.com"
     })
 
-with open('./streamlit/styles.css') as f:
+with open('.streamlit/css/home.css') as f:
     css = f.read()
 
 st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
@@ -33,8 +33,6 @@ if st.button("What is Influence", key="button2", use_container_width=True):
 if st.button("What is the Physician Metaphor", key="button3", use_container_width=True):
     st.session_state['user_initial_prompt'] = "What is the Physician Metaphor"
     st.switch_page("pages/chat.py")
-
-
 
 if input:
     st.session_state['user_initial_prompt'] = input
