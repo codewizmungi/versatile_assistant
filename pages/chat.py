@@ -5,7 +5,6 @@ import streamlit as st
 import time
 import google.generativeai as genai
 
-
 genai.configure(api_key=st.secrets['GOOGLE_API_KEY'])
 
 st.set_page_config(
