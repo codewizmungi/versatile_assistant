@@ -188,4 +188,8 @@ button[data-testid="baseButton-secondary"] {
     .block-container {
         width: 50%;
     }
+
+    div[data-testid="stBottom"] {
+        width: 60%;
+    }
 }
