@@ -159,6 +159,10 @@ button[data-testid="baseButton-secondary"] {
     .block-container {
         width: 100%;
     }
+
+    div[data-testid="stBottom"] {
+        width: 100%;
+    }
 }
 
 @media only screen and (min-width: 1024px) {

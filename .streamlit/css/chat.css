@@ -97,6 +97,14 @@ textarea[data-testid="stChatInputTextArea"] {
         min-width: auto;
         max-width: initial;
     }
+
+    .block-container {
+        width: 100%;
+    }
+
+    div[data-testid="stBottom"] {
+        width: 100%;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -128,5 +136,13 @@ textarea[data-testid="stChatInputTextArea"] {
         padding: 6rem 1rem 1rem;
         min-width: auto;
         max-width: initial;
+    }
+
+    .block-container {
+        width: 50%;
+    }
+
+    div[data-testid="stBottom"] {
+        width: 60%;
     }
 }
