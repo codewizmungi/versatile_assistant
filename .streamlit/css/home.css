@@ -189,7 +189,5 @@ button[data-testid="baseButton-secondary"] {
         width: 50%;
     }
 
-    div[data-testid="stBottom"] {
-        width: 60%;
-    }
+
 }
