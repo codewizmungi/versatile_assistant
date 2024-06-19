@@ -7,10 +7,6 @@ st.set_page_config(
         'About': "https://isitnet.com"
     })
 
-with open('.streamlit/css/home.css') as f:
-    css = f.read()
-
-st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
 
 st.header("Hello,")
 st.subheader("How can I assist you today?")
